@@ -1,0 +1,14 @@
+{
+    "name": "vendor_name/heroku",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+      {
+        "name": "Tan Tynn Wei",
+        "email": "20019616@myrp.edu.sg"
+      }
+    ],
+    "require": {
+    }
+  }
