@@ -1,0 +1,29 @@
+<!-- fix : Page lacks the HTML doctype, thus triggering quirks mode -->
+<!DOCTYPE html>
+<!-- fix : <html> element does not have a [lang] attribute -->
+<html lang="en">
+<head>
+    <!-- fix : Use <link rel="preload" as="font"> to fetch your font files earlier -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- fix : Does not have a <meta name="viewport"> tag with width or initial-scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fix : Document does not have a meta description -->
+    <meta name="description" content="This is a description.">
+    <!-- fix : Document doesn't have a <title> element -->
+    <title>Hello world</title>
+</head>
+<!-- fix :  avoid showing invisible text while custom fonts load is to temporarily show a system font -->
+<style>
+    
+    @font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+</style>
+<body>
+  Hello World!
+</body>
+</html>
