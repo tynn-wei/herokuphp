@@ -1,0 +1,23 @@
+<!-- fix : Page lacks the HTML doctype, thus triggering quirks mode -->
+<!DOCTYPE html>
+<!-- fix : <html> element does not have a [lang] attribute -->
+<html lang="en">
+<head>
+    <!-- fix : Does not have a <meta name="viewport"> tag with width or initial-scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fix : Document does not have a meta description -->
+    <meta name="description" content="This is a description.">
+    <!-- fix : Document doesn't have a <title> element -->
+    <title>Hello world</title>
+</head>
+<style>
+    img {
+  aspect-ratio: attr(width) / attr(height);
+    }
+</style>
+<body>
+  Hello World!
+  <!-- set a 640:360 i.e a 16:9 - aspect ratio -->
+<img src="img/wallpaper.jpg" width="640" height="360" alt="Wallpaper" />
+</body>
+</html>
